@@ -1,0 +1,113 @@
+.order {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.order-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.no-orders {
+  font-size: 18px;
+  color: #888;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.order-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.order-item-details {
+  flex: 2;
+  font-size: 15px;
+  color: #444;
+}
+
+.order-item-food {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.order-item-name {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.order-item-address {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.order-item-phone {
+  font-weight: bold;
+  color: #222;
+}
+
+.order-item-extra {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.order-item-extra select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f7f7f7;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.order-item-extra select:focus {
+  border-color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-item-extra {
+    align-items: flex-start;
+    margin-top: -10px;
+  }
+
+  .order-img {
+    width: 50px;
+  }
+}

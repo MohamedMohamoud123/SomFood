@@ -1,0 +1,98 @@
+.my-orders {
+  margin: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.my-orders h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.orders-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.my-orders-order {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  border: 1px solid #ff6347;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.my-orders-order:hover {
+  transform: scale(1.01);
+}
+
+.my-orders-order img {
+  width: 45px;
+}
+
+.order-items {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.order-amount,
+.order-count {
+  font-weight: 500;
+  color: #333;
+}
+
+.order-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.status-dot {
+  color: tomato;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.track-btn {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffe1e1;
+  color: #333;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
+}
+
+.track-btn:hover {
+  background-color: #ffd1d1;
+}
+
+.empty-message {
+  font-size: 16px;
+  color: gray;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .my-orders-order {
+    grid-template-columns: 1fr;
+    text-align: left;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .track-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,177 @@
+/* General container and layout */
+.contact-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.contact-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Large screens (tablets and up) */
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Reach Us sidebar styles */
+.contact-sidebar {
+  background-color: #f0f0f0;
+  padding: 30px 25px;
+  border-radius: 12px;
+  flex: 0 0 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.contact-sidebar h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #0c3c60;
+}
+
+.info-block {
+  margin-bottom: 25px;
+}
+
+.info-block h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  border-left: 3px solid #0c3c60;
+  padding-left: 10px;
+}
+
+.info-block p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.contact-sidebar a {
+  display: block;
+  color: #0c3c60;
+  text-decoration: none;
+  margin: 4px 0;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.contact-sidebar a:hover {
+  color: #0077cc;
+  transform: translateX(6px);
+}
+
+/* Right form area */
+.contact-main {
+  flex: 1;
+  padding: 10px 0;
+}
+
+.contact-main h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0c3c60;
+}
+
+.contact-main p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0c3c60;
+  outline: none;
+}
+
+/* Submit button style */
+.contact-form button {
+  background: linear-gradient(135deg, #0c3c60, #005c97);
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(135deg, #092e4c, #004070);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.thank-you-message {
+  background-color: #e7f9ed;
+  border: 1px solid #b3e6cd;
+  padding: 25px;
+  border-radius: 10px;
+  color: #1a5d3d;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Responsive tweaks for mobile */
+@media (max-width: 767px) {
+  .contact-sidebar {
+    flex: 1 1 100%;
+  }
+
+  .contact-main h2 {
+    font-size: 1.6rem;
+  }
+
+  .contact-sidebar h3 {
+    font-size: 1.4rem;
+  }
+
+  .info-block h4 {
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+}

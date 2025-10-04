@@ -1,0 +1,77 @@
+.menu-slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu-top {
+  all: unset;
+  display: block;
+  text-align: center;
+  padding: 70px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-blend-mode: overlay;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Heading */
+.menu-top h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Paragraph */
+.menu-top p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: white;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0.3;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .menu-top {
+    padding: 50px 15px;
+  }
+
+  .menu-top h1 {
+    font-size: 30px;
+  }
+
+  .menu-top p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-top h1 {
+    font-size: 24px;
+  }
+
+  .menu-top p {
+    font-size: 14px;
+  }
+}
